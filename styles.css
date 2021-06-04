@@ -32,8 +32,8 @@ h2 {
 figure.html-sample {
   text-align: center;
   font-style: italic;
-  max-width: 262px;
-  max-height: 218px;
+  max-width: 346px;
+  max-height: 228px;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 80px;
@@ -42,6 +42,7 @@ figure.html-sample {
 
 .html-sample figcaption {
   padding-top: 4px;
+  text-align: justify;
 }
 
 /* Rounded border */
