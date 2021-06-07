@@ -12,10 +12,12 @@ code {
 
 h1 {
   text-align: center;
+  font-weight: 400;
 }
 
 h2 {
   text-align: center;
+  font-weight: 300;
 }
 
 .html-sample img {
