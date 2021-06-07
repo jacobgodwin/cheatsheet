@@ -11,9 +11,9 @@
     />
   </head>
   <body>
-    <h1>HTML & CSS Cheat Sheet</h1>
+    <h1 id="home">HTML & CSS Cheat Sheet</h1>
     <hr class="rounded" />
-    <h2>HTML Structure</h2>
+    <h2 id="html-structure">HTML Structure</h2>
     <table id="structure">
       <thead>
         <tr>
@@ -94,7 +94,7 @@
       </figcaption>
     </figure>
     <hr class="rounded" />
-    <h2>Semantic HTML</h2>
+    <h2 id="semantic-html">Semantic HTML</h2>
     <table id="semantic">
       <thead>
         <tr>
@@ -103,7 +103,101 @@
           <th>Description</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody>
+        <tr>
+          <td>
+            <code>&lt;header&gt;</code>
+          </td>
+          <td>Header Tag</td>
+          <td>
+            Represents a container for introductory content or a set of
+            navigational links. You can have several
+            <code>&lt;header&gt;</code> elements in one HTML document, however
+            it should not be placed in a <code>&lt;footer&gt;</code>,
+            <code>&lt;address&gt;</code> or another
+            <code>&lt;header&gt;</code> element.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;nav&gt;</code>
+          </td>
+          <td>Nav Tag</td>
+          <td>Defines a set of navigation links.</td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;article&gt;</code>
+          </td>
+          <td>Article Tag</td>
+          <td>
+            Specifies independent, self-contained content. An article should
+            make sense on its own and it should be possible to distribute it
+            independently from the site and still make sense.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;section&gt;</code>
+          </td>
+          <td>Section Tag</td>
+          <td>Defines a section in a document.</td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;aside&gt;</code>
+          </td>
+          <td>Aside Tag</td>
+          <td>
+            Defines some content aside form the content it is placed in. The
+            aside content should be indirectly related to the surrounding
+            content.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;footer&gt;</code>
+          </td>
+          <td>Footer Tag</td>
+          <td>
+            Defines a footer for a document or section.Typically contains
+            authorship information, copyright information, contact information,
+            sitemap, back to top links, and/or related documents.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;figure&gt;</code>
+          </td>
+          <td>Figure Tag</td>
+          <td>
+            Specifies self-contained content, like illustrations, diagrams,
+            photos, code listings, etc.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;figcaption&gt;</code>
+          </td>
+          <td>Figcaption Tag</td>
+          <td>Defines a caption for a &lt;figure&gt; element.</td>
+        </tr>
+      </tbody>
     </table>
+    <figure class="semantic-example">
+      <img
+        src="images/html-sectioning-elements.png"
+        alt="Semantic HTML layout diagram."
+      />
+      <figcaption>
+        Semantic HTML layout diagram.
+        <a
+          href="https://www.internetingishard.com/html-and-css/semantic-html/"
+          target="_blank"
+          >Source</a
+        >
+      </figcaption>
+    </figure>
+    <hr class="rounded" />
   </body>
 </html>
