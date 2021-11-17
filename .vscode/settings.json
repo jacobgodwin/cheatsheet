@@ -23,7 +23,7 @@
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "vscode-icons",
   "workbench.settings.editor": "json",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "launch": {
     "configurations": []
   },

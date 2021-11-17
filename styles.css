@@ -2,16 +2,49 @@ body {
   background-color: #222831;
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  gap: 25px;
+  padding-top: 25px;
 }
 
-code {
+/* code {
   font-family: "JetBrains Mono", monospace;
   background-color: #e1e5ea;
   color: #222831;
 }
+ */
+.intro {
+  align-self: center;
+  font-weight: 400;
+  font-size: 36px;
+}
 
-h1 {
-  text-align: center;
+.text-divider {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.text-divider::before,
+.text-divider::after {
+  content: "";
+  height: 1px;
+  background-color: #ffffff;
+  flex-grow: 1;
+}
+
+.text-divider::before {
+  margin-right: 1rem;
+}
+
+.text-divider::after {
+  margin-left: 1rem;
+}
+
+/* h1 {
   font-weight: 400;
 }
 
@@ -50,9 +83,9 @@ figure.semantic-example {
   text-align: justify;
   font-size: smaller;
 }
-
+*/
 /* Rounded border */
-hr.rounded {
+/*hr.rounded {
   border-top: 2px solid #f0f2f5;
   border-radius: 5px;
   margin: 8px auto;
@@ -108,22 +141,22 @@ table tr th {
   text-align: left;
 }
 
-/* top-left border-radius */
+/* top-left border-radius
 table tr:first-child th:first-child {
   border-top-left-radius: 6px;
 }
 
-/* top-right border-radius */
+/* top-right border-radius 
 table tr:first-child th:last-child {
   border-top-right-radius: 6px;
 }
 
-/* bottom-left border-radius */
+/* bottom-left border-radius 
 table tr:last-child td:first-child {
   border-bottom-left-radius: 6px;
 }
 
-/* bottom-right border-radius */
+/* bottom-right border-radius
 table tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
-}
+} */
