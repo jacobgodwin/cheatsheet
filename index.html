@@ -13,79 +13,90 @@
   <body>
     <div class="intro">HTML & CSS Cheat Sheet</div>
     <div class="text-divider">HTML Structure</div>
-    <!--     <table id="structure">
-      <thead>
-        <tr>
-          <th>Tag</th>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <code>&lt;!DOCTYPE html&gt;</code>
-          </td>
-          <td>HTML !DOCTYPE Declaration</td>
-          <td>
-            All HTML documents must start with this tag and is information for
-            the browser.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>&lt;html&gt;</code>
-          </td>
-          <td>HTML Tag</td>
-          <td>
-            Represents the root of an HTML document and contains all other HTML
-            elements. Should include the <code>lang="en"</code> attribute.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>&lt;head&gt;</code>
-          </td>
-          <td>Head Tag</td>
-          <td>
-            Container for metadata that is placed between the
-            <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> tag.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>&lt;meta&gt;</code>
-          </td>
-          <td>Meta Tag</td>
-          <td>
-            Defines meta data about an HTML document. The
-            <code>charset</code> attribute specifies the character encoding of
-            the HTML document. HTML5 encourages use of the UTF-8 character set.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>&lt;title&gt;</code>
-          </td>
-          <td>Title Tag</td>
-          <td>
-            Defines the title of the document and is displayed in the browser's
-            toolbar.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>&lt;body&gt;</code>
-          </td>
-          <td>Body Tag</td>
-          <td>
-            Defines the document's body and contains all the contents of an HTML
-            document.
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <figure class="html-sample">
+    <div class="table-container">
+      <table id="structure">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;!DOCTYPE html&gt;</code class="table-html-tag">
+            </td>
+            <td>HTML !DOCTYPE Declaration</td>
+            <td>
+              All HTML documents must start with this tag and is information for
+              the browser.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;html&gt;</code class="table-html-tag">
+            </td>
+            <td>HTML Tag</td>
+            <td>
+              Represents the root of an HTML document and contains all other
+              HTML elements. Should include the
+              <code class="table-html-tag">lang="en"</code class="table-html-tag"> attribute.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;head&gt;</code class="table-html-tag">
+            </td>
+            <td>Head Tag</td>
+            <td>
+              Container for metadata that is placed between the
+              <code class="table-html-tag">&lt;html&gt;</code class="table-html-tag"> and <code class="table-html-tag">&lt;body&gt;</code class="table-html-tag"> tag.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;meta&gt;</code class="table-html-tag">
+            </td>
+            <td>Meta Tag</td>
+            <td>
+              Defines meta data about an HTML document. The
+              <code class="table-html-tag">charset</code class="table-html-tag"> attribute specifies the character encoding of
+              the HTML document. HTML5 encourages use of the UTF-8 character
+              set.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;title&gt;</code class="table-html-tag">
+            </td>
+            <td>Title Tag</td>
+            <td>
+              Defines the title of the document and is displayed in the
+              browser's toolbar.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;body&gt;</code class="table-html-tag">
+            </td>
+            <td>Body Tag</td>
+            <td>
+              Defines the document's body and contains all the contents of an
+              HTML document.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="html-example">
+        <code class="html-boilerplate">
+                <span class="bp-punctuation">
+                    &lt;&#33</span><span class="bp-doctype">DOCTYPE</span>
+                </span>
+        </code>
+    </div>
+    <!--<figure class="html-sample">
       <img src="images/html-sample.png" alt="Example HTML document structure" />
       <figcaption>
         Example HTML document showing the proper layout and structure of the
@@ -105,28 +116,28 @@
       <tbody>
         <tr>
           <td>
-            <code>&lt;header&gt;</code>
+            <code class="table-html-tag">&lt;header&gt;</code class="table-html-tag">
           </td>
           <td>Header Tag</td>
           <td>
             Represents a container for introductory content or a set of
             navigational links. You can have several
-            <code>&lt;header&gt;</code> elements in one HTML document, however
-            it should not be placed in a <code>&lt;footer&gt;</code>,
-            <code>&lt;address&gt;</code> or another
-            <code>&lt;header&gt;</code> element.
+            <code class="table-html-tag">&lt;header&gt;</code class="table-html-tag"> elements in one HTML document, however
+            it should not be placed in a <code class="table-html-tag">&lt;footer&gt;</code class="table-html-tag">,
+            <code class="table-html-tag">&lt;address&gt;</code class="table-html-tag"> or another
+            <code class="table-html-tag">&lt;header&gt;</code class="table-html-tag"> element.
           </td>
         </tr>
         <tr>
           <td>
-            <code>&lt;nav&gt;</code>
+            <code class="table-html-tag">&lt;nav&gt;</code class="table-html-tag">
           </td>
           <td>Nav Tag</td>
           <td>Defines a set of navigation links.</td>
         </tr>
         <tr>
           <td>
-            <code>&lt;article&gt;</code>
+            <code class="table-html-tag">&lt;article&gt;</code class="table-html-tag">
           </td>
           <td>Article Tag</td>
           <td>
@@ -137,14 +148,14 @@
         </tr>
         <tr>
           <td>
-            <code>&lt;section&gt;</code>
+            <code class="table-html-tag">&lt;section&gt;</code class="table-html-tag">
           </td>
           <td>Section Tag</td>
           <td>Defines a section in a document.</td>
         </tr>
         <tr>
           <td>
-            <code>&lt;aside&gt;</code>
+            <code class="table-html-tag">&lt;aside&gt;</code class="table-html-tag">
           </td>
           <td>Aside Tag</td>
           <td>
@@ -155,7 +166,7 @@
         </tr>
         <tr>
           <td>
-            <code>&lt;footer&gt;</code>
+            <code class="table-html-tag">&lt;footer&gt;</code class="table-html-tag">
           </td>
           <td>Footer Tag</td>
           <td>
@@ -166,20 +177,20 @@
         </tr>
         <tr>
           <td>
-            <code>&lt;figure&gt;</code>
+            <code class="table-html-tag">&lt;figure&gt;</code class="table-html-tag">
           </td>
           <td>Figure Tag</td>
           <td>
             Specifies self-contained content, like illustrations, diagrams,
-            photos, code listings, etc.
+            photos, code class="table-html-tag" listings, etc.
           </td>
         </tr>
         <tr>
           <td>
-            <code>&lt;figcaption&gt;</code>
+            <code class="table-html-tag">&lt;figcaption&gt;</code class="table-html-tag">
           </td>
           <td>Figcaption Tag</td>
-          <td>Defines a caption for a <code>&lt;figure&gt;</code> element.</td>
+          <td>Defines a caption for a <code class="table-html-tag">&lt;figure&gt;</code class="table-html-tag"> element.</td>
         </tr>
       </tbody>
     </table>

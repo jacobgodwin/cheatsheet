@@ -6,6 +6,9 @@
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.tabSize": 4,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "better-comments.highlightPlainText": false,
+  "better-comments.multilineComments": true,
   // content rendering
   "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -73,8 +76,5 @@
       "bold": false,
       "italic": false
     }
-  ],
-  "better-comments.highlightPlainText": false,
-  "better-comments.multilineComments": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  ]
 }
