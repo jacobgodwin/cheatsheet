@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML & CSS Cheat Sheet</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -10,9 +12,10 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div class="intro">HTML & CSS Cheat Sheet</div>
-    <div class="text-divider">HTML Structure</div>
+    <div class="section-divider">HTML Structure</div>
     <div class="table-container">
       <table id="structure">
         <thead>
@@ -25,7 +28,7 @@
         <tbody>
           <tr>
             <td>
-              <code class="table-html-tag">&lt;!DOCTYPE html&gt;</code class="table-html-tag">
+              <code class="table-html-tag">&lt;!DOCTYPE html&gt;</code>
             </td>
             <td>HTML !DOCTYPE Declaration</td>
             <td>
@@ -35,40 +38,41 @@
           </tr>
           <tr>
             <td>
-              <code class="table-html-tag">&lt;html&gt;</code class="table-html-tag">
+              <code class="table-html-tag">&lt;html&gt;</code>
             </td>
             <td>HTML Tag</td>
             <td>
               Represents the root of an HTML document and contains all other
               HTML elements. Should include the
-              <code class="table-html-tag">lang="en"</code class="table-html-tag"> attribute.
+              <code class="table-html-tag">lang="en"</code> attribute.
             </td>
           </tr>
           <tr>
             <td>
-              <code class="table-html-tag">&lt;head&gt;</code class="table-html-tag">
+              <code class="table-html-tag">&lt;head&gt;</code>
             </td>
             <td>Head Tag</td>
             <td>
               Container for metadata that is placed between the
-              <code class="table-html-tag">&lt;html&gt;</code class="table-html-tag"> and <code class="table-html-tag">&lt;body&gt;</code class="table-html-tag"> tag.
+              <code class="table-html-tag">&lt;html&gt;</code> and
+              <code class="table-html-tag">&lt;body&gt;</code> tag.
             </td>
           </tr>
           <tr>
             <td>
-              <code class="table-html-tag">&lt;meta&gt;</code class="table-html-tag">
+              <code class="table-html-tag">&lt;meta&gt;</code>
             </td>
             <td>Meta Tag</td>
             <td>
               Defines meta data about an HTML document. The
-              <code class="table-html-tag">charset</code class="table-html-tag"> attribute specifies the character encoding of
-              the HTML document. HTML5 encourages use of the UTF-8 character
-              set.
+              <code class="table-html-tag">charset</code> attribute specifies
+              the character encoding of the HTML document. HTML5 encourages use
+              of the UTF-8 character set.
             </td>
           </tr>
           <tr>
             <td>
-              <code class="table-html-tag">&lt;title&gt;</code class="table-html-tag">
+              <code class="table-html-tag">&lt;title&gt;</code>
             </td>
             <td>Title Tag</td>
             <td>
@@ -78,7 +82,7 @@
           </tr>
           <tr>
             <td>
-              <code class="table-html-tag">&lt;body&gt;</code class="table-html-tag">
+              <code class="table-html-tag">&lt;body&gt;</code>
             </td>
             <td>Body Tag</td>
             <td>
@@ -89,126 +93,194 @@
         </tbody>
       </table>
     </div>
-    <div class="html-example">
-        <code class="html-boilerplate">
-                <span class="bp-punctuation">
-                    &lt;&#33</span><span class="bp-doctype">DOCTYPE</span>
-                </span>
-        </code>
+    <div class="small-divider">HTML Boilerplate Sample</div>
+    <div class="html-boilerplate">
+      <!--DOCTYPE-->
+      <span class="bp-punctuation">&lt;</span
+      ><span class="bp-tag">&#33;DOCTYPE</span
+      ><span class="bp-element"> html</span
+      ><span class="bp-punctuation">&gt;</span><br />
+      <!--html open-->
+      <span class="bp-punctuation">&lt;</span><span class="bp-tag">html</span
+      ><span class="bp-element"> lang</span
+      ><span class="bp-punctuation">&#61;</span
+      ><span class="bp-attribute">"en"</span
+      ><span class="bp-punctuation">&gt;</span><br />
+      <!--head open-->
+      <span class="bp-punctuation">&lt;</span><span class="bp-tag">head</span
+      ><span class="bp-punctuation">&gt;</span><br />
+      <!--meta-->
+      <span class="bp-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span
+      ><span class="bp-tag">meta</span><span class="bp-element"> charset</span
+      ><span class="bp-punctuation">&#61;</span
+      ><span class="bp-attribute">"UTF-8"</span
+      ><span class="bp-punctuation">&nbsp;&#47;&gt;</span>
+      <br />
+      <span class="bp-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span
+      ><span class="bp-tag">meta</span
+      ><span class="bp-element"> http-equiv</span
+      ><span class="bp-punctuation">&#61;</span
+      ><span class="bp-attribute">"X-UA-Compatible"</span
+      ><span class="bp-element"> content</span
+      ><span class="bp-punctuation">&#61;</span
+      ><span class="bp-attribute">"IE=edge"</span
+      ><span class="bp-punctuation">&nbsp;&#47;&gt;</span>
+      <br />
+      <span class="bp-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span
+      ><span class="bp-tag">meta</span><span class="bp-element"> name</span
+      ><span class="bp-punctuation">&#61;</span
+      ><span class="bp-attribute">"viewport"</span
+      ><span class="bp-element"> content</span
+      ><span class="bp-punctuation">&#61;</span
+      ><span class="bp-attribute">"width=device-width, initial-scale=1.0"</span
+      ><span class="bp-punctuation">&nbsp;&#47;&gt;</span>
+      <br />
+      <!--title open-->
+      <span class="bp-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span
+      ><span class="bp-tag">title</span><span class="bp-punctuation">&gt;</span
+      ><span class="bp-punctuation">Document</span
+      ><span class="bp-punctuation">&lt;&#47;</span
+      ><span class="bp-tag">title</span><span class="bp-punctuation">&gt;</span>
+      <br />
+      <!--title close-->
+      <!--link-->
+      <span class="bp-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span
+      ><span class="bp-tag">link</span><span class="bp-element"> rel</span
+      ><span class="bp-punctuation">&#61;</span
+      ><span class="bp-attribute">"stylesheet"</span
+      ><span class="bp-element"> href</span
+      ><span class="bp-punctuation">&#61;</span
+      ><span class="bp-attribute">"style.css"</span
+      ><span class="bp-punctuation">&nbsp;&#47;&gt;</span>
+      <br />
+      <!--head close-->
+      <span class="bp-punctuation">&lt;&#47;</span
+      ><span class="bp-tag">head</span><span class="bp-punctuation">&gt;</span
+      ><br />
+      <!--body open-->
+      <span class="bp-punctuation">&lt;</span><span class="bp-tag">body</span
+      ><span class="bp-punctuation">&gt;</span><br /><br />
+      <!--body close-->
+      <span class="bp-punctuation">&lt;&#47;</span
+      ><span class="bp-tag">body</span><span class="bp-punctuation">&gt;</span
+      ><br />
+      <!--html close-->
+      <span class="bp-punctuation">&lt;&#47;</span
+      ><span class="bp-tag">html</span><span class="bp-punctuation">&gt;</span
+      ><br />
     </div>
-    <!--<figure class="html-sample">
-      <img src="images/html-sample.png" alt="Example HTML document structure" />
-      <figcaption>
-        Example HTML document showing the proper layout and structure of the
-        above elements.
-      </figcaption>
-    </figure>
-    <hr class="rounded" />
-    <h2 id="semantic-html">Semantic HTML</h2>
-    <table id="semantic">
-      <thead>
-        <tr>
-          <th>Tag</th>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <code class="table-html-tag">&lt;header&gt;</code class="table-html-tag">
-          </td>
-          <td>Header Tag</td>
-          <td>
-            Represents a container for introductory content or a set of
-            navigational links. You can have several
-            <code class="table-html-tag">&lt;header&gt;</code class="table-html-tag"> elements in one HTML document, however
-            it should not be placed in a <code class="table-html-tag">&lt;footer&gt;</code class="table-html-tag">,
-            <code class="table-html-tag">&lt;address&gt;</code class="table-html-tag"> or another
-            <code class="table-html-tag">&lt;header&gt;</code class="table-html-tag"> element.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code class="table-html-tag">&lt;nav&gt;</code class="table-html-tag">
-          </td>
-          <td>Nav Tag</td>
-          <td>Defines a set of navigation links.</td>
-        </tr>
-        <tr>
-          <td>
-            <code class="table-html-tag">&lt;article&gt;</code class="table-html-tag">
-          </td>
-          <td>Article Tag</td>
-          <td>
-            Specifies independent, self-contained content. An article should
-            make sense on its own and it should be possible to distribute it
-            independently from the site and still make sense.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code class="table-html-tag">&lt;section&gt;</code class="table-html-tag">
-          </td>
-          <td>Section Tag</td>
-          <td>Defines a section in a document.</td>
-        </tr>
-        <tr>
-          <td>
-            <code class="table-html-tag">&lt;aside&gt;</code class="table-html-tag">
-          </td>
-          <td>Aside Tag</td>
-          <td>
-            Defines some content aside form the content it is placed in. The
-            aside content should be indirectly related to the surrounding
-            content.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code class="table-html-tag">&lt;footer&gt;</code class="table-html-tag">
-          </td>
-          <td>Footer Tag</td>
-          <td>
-            Defines a footer for a document or section.Typically contains
-            authorship information, copyright information, contact information,
-            sitemap, back to top links, and/or related documents.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code class="table-html-tag">&lt;figure&gt;</code class="table-html-tag">
-          </td>
-          <td>Figure Tag</td>
-          <td>
-            Specifies self-contained content, like illustrations, diagrams,
-            photos, code class="table-html-tag" listings, etc.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code class="table-html-tag">&lt;figcaption&gt;</code class="table-html-tag">
-          </td>
-          <td>Figcaption Tag</td>
-          <td>Defines a caption for a <code class="table-html-tag">&lt;figure&gt;</code class="table-html-tag"> element.</td>
-        </tr>
-      </tbody>
-    </table>
-    <figure class="semantic-example">
-      <img
-        src="images/html-sectioning-elements.png"
-        alt="Semantic HTML layout diagram."
-      />
-      <figcaption>
-        Semantic HTML layout diagram.
-        <a
-          href="https://www.internetingishard.com/html-and-css/semantic-html/"
-          target="_blank"
-          >Source</a
-        >
-      </figcaption>
-    </figure>
-    <hr class="rounded" />
- -->
+    <div class="section-divider">Semantic HTML</div>
+    <div class="table-container">
+      <table id="semantic">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;header&gt;</code>
+            </td>
+            <td>Header Tag</td>
+            <td>
+              Represents a container for introductory content or a set of
+              navigational links. You can have several
+              <code class="table-html-tag">&lt;header&gt;</code> elements in one
+              HTML document, however it should not be placed in a
+              <code class="table-html-tag">&lt;footer&gt;</code>,
+              <code class="table-html-tag">&lt;address&gt;</code> or another
+              <code class="table-html-tag">&lt;header&gt;</code> element.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;nav&gt;</code>
+            </td>
+            <td>Nav Tag</td>
+            <td>Defines a set of navigation links.</td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;article&gt;</code>
+            </td>
+            <td>Article Tag</td>
+            <td>
+              Specifies independent, self-contained content. An article should
+              make sense on its own and it should be possible to distribute it
+              independently from the site and still make sense.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;section&gt;</code>
+            </td>
+            <td>Section Tag</td>
+            <td>Defines a section in a document.</td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;aside&gt;</code>
+            </td>
+            <td>Aside Tag</td>
+            <td>
+              Defines some content aside form the content it is placed in. The
+              aside content should be indirectly related to the surrounding
+              content.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;footer&gt;</code>
+            </td>
+            <td>Footer Tag</td>
+            <td>
+              Defines a footer for a document or section.Typically contains
+              authorship information, copyright information, contact
+              information, sitemap, back to top links, and/or related documents.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;figure&gt;</code>
+            </td>
+            <td>Figure Tag</td>
+            <td>
+              Specifies self-contained content, like illustrations, diagrams,
+              photos, code class="table-html-tag" listings, etc.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="table-html-tag">&lt;figcaption&gt;</code>
+            </td>
+            <td>Figcaption Tag</td>
+            <td>
+              Defines a caption for a
+              <code class="table-html-tag">&lt;figure&gt;</code> element.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="small-divider">Semantic Layout Example</div>
+    <div class="semantic-figure">
+      <figure class="semantic-example">
+        <img
+          src="images/html-sectioning-elements.png"
+          alt="Semantic HTML layout diagram."
+        />
+        <figcaption>
+          Semantic HTML layout diagram.
+          <a
+            href="https://www.internetingishard.com/html-and-css/semantic-html/"
+            target="_blank"
+            >Source</a
+          >
+        </figcaption>
+      </figure>
+    </div>
   </body>
 </html>

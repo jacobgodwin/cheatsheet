@@ -12,10 +12,6 @@ body {
 
 code {
   font-family: "JetBrains Mono", monospace;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
 }
 
 /* ---------- HEADER STYLING ---------- */
@@ -28,72 +24,103 @@ code {
 
 /* ---------- CODE SNIPPET STYLING ---------- */
 
+.html-boilerplate {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  background-color: #393e46;
+  align-self: center;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px #091d33;
+}
+
+.html-boilerplate:hover {
+  box-shadow: 0 5px 10px 4px #091d33;
+}
+
+.bp-punctuation {
+  color: #abb2bf;
+}
+
+.bp-tag {
+  color: #e06c75;
+}
+
+.bp-element {
+  color: #d19a66;
+}
+
+.bp-attribute {
+  color: #98c379;
+}
+
 /* ---------- SECTION DIVIDER STYLING ---------- */
 
-.text-divider {
+.section-divider {
   display: flex;
   align-items: center;
   font-weight: 300;
   font-size: 26px;
 }
 
-.text-divider::before,
-.text-divider::after {
+.section-divider::before,
+.section-divider::after {
   content: "";
   height: 1px;
   background-color: #ffffff;
   flex-grow: 1; /* both lines expand to occupy available space */
 }
 
-.text-divider::before {
+.section-divider::before {
   margin-right: 1rem;
 }
 
-.text-divider::after {
+.section-divider::after {
   margin-left: 1rem;
 }
 
-/*.html-sample img {
-  border: 2px solid #343d4b;
-  border-radius: 6px;
+/* ---------- SMALL DIVIDER STYLING ---------- */
+
+.small-divider {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 16px;
 }
 
-figure.html-sample {
-  text-align: center;
-  font-style: italic;
-  max-width: 346px;
-  max-height: 228px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 80px;
+.small-divider::before,
+.small-divider::after {
+  content: "";
+  height: 1px;
+  background-color: #ffffff;
+  flex-grow: 1; /* both lines expand to occupy available space */
+  margin: 0 30%;
+}
+
+.small-divider::before {
+  margin-right: 1rem;
+}
+
+.small-divider::after {
+  margin-left: 1rem;
+}
+
+/* ---------- IMAGE STYLING ---------- */
+
+.semantic-figure {
+  align-self: center;
 }
 
 figure.semantic-example {
   text-align: center;
-  font-style: italic;
-  margin: 0 auto;
-  padding-top: 20px;
   padding-bottom: 20px;
   max-width: 556px;
   max-height: 700px;
 }
 
-.html-sample figcaption {
-  padding-top: 4px;
-  text-align: justify;
-  font-size: smaller;
-}*/
-*/
-/* Rounded border */
-/*hr.rounded {
-  border-top: 2px solid #f0f2f5;
-  border-radius: 5px;
-  margin: 8px auto;
-  width: 50%;
-}
-
 .semantic-example figcaption {
-  font-size: smaller;
+  font-size: 12px;
+  font-style: italic;
 }
 
 .semantic-example img {
@@ -108,7 +135,6 @@ figure.semantic-example {
 .semantic-example figcaption a:hover {
   color: #5e6f87;
 }
-*/
 
 /* ---------- TABLE STYLING ---------- */
 
@@ -128,6 +154,7 @@ table {
   white-space: nowrap;
   border-collapse: separate;
   border-spacing: 0;
+  box-shadow: 0 10px 30px 6px #091d33;
 }
 
 /* th and td border and padding */
