@@ -32,10 +32,12 @@ code {
   padding: 16px;
   border-radius: 6px;
   box-shadow: 0 1px 2px #091d33;
+  transition: 0.5s ease;
 }
 
 .html-boilerplate:hover {
   box-shadow: 0 5px 10px 4px #091d33;
+  transition: 0.5s ease;
 }
 
 .bp-punctuation {
@@ -113,6 +115,7 @@ code {
 
 figure.semantic-example {
   text-align: center;
+  margin-top: 0;
   padding-bottom: 20px;
   max-width: 556px;
   max-height: 700px;
@@ -121,11 +124,14 @@ figure.semantic-example {
 .semantic-example figcaption {
   font-size: 12px;
   font-style: italic;
+  padding-top: 10px;
 }
 
 .semantic-example img {
   max-width: 50%;
   height: auto;
+  border-radius: 6px;
+  filter: drop-shadow(2px 6px 2px #091d33);
 }
 
 .semantic-example figcaption a {
