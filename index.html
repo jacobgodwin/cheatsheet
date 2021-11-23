@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML & CSS Cheat Sheet</title>
+    <!--BOOTSTRAP ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap"
@@ -14,8 +20,27 @@
   </head>
 
   <body>
+    <nav>
+      <div id="home" class="header">
+        <div class="navigation">
+          <ul>
+            <li><i class="bi bi-list"></i></li>
+            <li><a href="#home">Home</a></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><a href="#html-structure">HTML Structure</a></li>
+            <li><i class="bi bi-dot"></i></li>
+            <li><a href="#semantic-html">Semantic HTML</a></li>
+          </ul>
+        </div>
+        <div class="logos">
+          <a href="https://github.com/jacobgodwin" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
     <div class="intro">HTML & CSS Cheat Sheet</div>
-    <div class="section-divider">HTML Structure</div>
+    <div id="html-structure" class="section-divider">HTML Structure</div>
     <div class="table-container">
       <table id="structure">
         <thead>
@@ -169,7 +194,7 @@
       ><span class="bp-tag">html</span><span class="bp-punctuation">&gt;</span
       ><br />
     </div>
-    <div class="section-divider">Semantic HTML</div>
+    <div id="semantic-html" class="section-divider">Semantic HTML</div>
     <div class="table-container">
       <table id="semantic">
         <thead>

@@ -14,6 +14,41 @@ code {
   font-family: "JetBrains Mono", monospace;
 }
 
+/* ---------- NAV STYLING ---------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  font-size: 18px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logos {
+  font-size: 1.75rem;
+  margin-left: auto;
+}
+
+.header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bi-list {
+  font-size: 1.75rem;
+}
+
 /* ---------- HEADER STYLING ---------- */
 
 .intro {
