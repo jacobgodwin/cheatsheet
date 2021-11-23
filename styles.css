@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-top: 25px;
 }
 
 code {
@@ -52,9 +51,11 @@ code {
 /* ---------- HEADER STYLING ---------- */
 
 .intro {
-  align-self: center;
+  display: flex;
+  justify-content: center;
   font-weight: 400;
   font-size: 36px;
+  padding-top: 25px;
 }
 
 /* ---------- CODE SNIPPET STYLING ---------- */
@@ -68,6 +69,7 @@ code {
   border-radius: 6px;
   box-shadow: 0 1px 2px #091d33;
   transition: 0.5s ease;
+  margin: 0 20%;
 }
 
 .html-boilerplate:hover {
@@ -98,6 +100,7 @@ code {
   align-items: center;
   font-weight: 300;
   font-size: 26px;
+  padding-bottom: 25px;
 }
 
 .section-divider::before,
@@ -123,6 +126,8 @@ code {
   align-items: center;
   font-weight: 300;
   font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .small-divider::before,
@@ -144,13 +149,11 @@ code {
 
 /* ---------- IMAGE STYLING ---------- */
 
-.semantic-figure {
-  align-self: center;
-}
-
 figure.semantic-example {
-  text-align: center;
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
   padding-bottom: 20px;
   max-width: 556px;
   max-height: 700px;
