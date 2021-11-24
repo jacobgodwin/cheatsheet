@@ -4,77 +4,125 @@ body {
   background-color: #222831;
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  /* border: 1px solid red; */
 }
 
 code {
   font-family: "JetBrains Mono", monospace;
 }
 
+/* ---------- CONTENT STYLING ---------- */
+
+.main-content-container {
+  display: flex;
+  margin-right: 50px;
+}
+
+.container-content {
+  /* border: 1px solid plum; */
+  flex: 0 0 75%;
+}
+
 /* ---------- NAV STYLING ---------- */
 
-.header {
+.intro {
+  font-family: "Bebas Neue", "Quicksand", sans-serif;
+}
+
+.container-nav {
+  /* border: 1px solid greenyellow; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  margin-top: 50px;
 }
 
 .navigation {
-  font-size: 18px;
+  font-size: 16px;
+  position: sticky;
+  top: 50px;
 }
 
-.header ul {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.logos {
-  font-size: 1.75rem;
-  margin-left: auto;
+.navigation li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
-.header a {
+.navigation a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.bi-list {
-  font-size: 1.75rem;
+.navigation a:hover {
+  color: #abb2bf;
+}
+
+.bi-circle {
+  padding-right: 20px;
+  font-size: 1rem;
 }
 
 /* ---------- HEADER STYLING ---------- */
 
 .intro {
-  display: flex;
-  justify-content: center;
   font-weight: 400;
-  font-size: 36px;
-  padding-top: 25px;
+  font-size: 30px;
+}
+
+header {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 50px 0;
+  margin: 0px 50px;
+}
+
+.logos {
+  font-size: 1.75rem;
+  color: #ffffff;
+}
+
+.logos a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bi-code-slash {
+  padding-right: 20px;
 }
 
 /* ---------- CODE SNIPPET STYLING ---------- */
 
-.html-boilerplate {
+pre.html-boilerplate {
   font-family: "JetBrains Mono", monospace;
   font-size: 16px;
-  background-color: #393e46;
-  padding: 16px;
+  background-color: #222831;
+  text-align: left;
+  line-height: 1.5;
+  tab-size: 4;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  hyphens: none;
+  padding: 0;
   border-radius: 6px;
-  box-shadow: 0 1px 2px #091d33;
-  transition: 0.5s ease;
   max-width: 500px;
-  margin: auto;
-}
-
-.html-boilerplate:hover {
-  box-shadow: 0 5px 10px 4px #091d33;
-  transition: 0.5s ease;
+  padding: 16px;
+  margin: 0 auto;
+  box-shadow: inset 0 0 6px #464a53;
 }
 
 .bp-punctuation {
@@ -100,7 +148,7 @@ code {
   align-items: center;
   font-weight: 300;
   font-size: 26px;
-  padding-bottom: 25px;
+  padding: 40px 0 40px 0;
 }
 
 .section-divider::before,
@@ -126,8 +174,7 @@ code {
   align-items: center;
   font-weight: 300;
   font-size: 16px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 40px 0 40px 0;
 }
 
 .small-divider::before,
@@ -169,7 +216,7 @@ figure.semantic-example {
   max-width: 50%;
   height: auto;
   border-radius: 6px;
-  filter: drop-shadow(2px 6px 2px #091d33);
+  filter: drop-shadow(2px 6px 2px #191d24);
 }
 
 .semantic-example figcaption a {
@@ -198,7 +245,7 @@ table {
   white-space: nowrap;
   border-collapse: separate;
   border-spacing: 0;
-  box-shadow: 0 10px 30px 6px #091d33;
+  box-shadow: 0 10px 14px 1px #191d24;
 }
 
 /* th and td border and padding */
