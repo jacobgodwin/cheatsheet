@@ -60,6 +60,10 @@ code {
   text-decoration: none;
 }
 
+.navigation a:hover {
+  color: #abb2bf;
+}
+
 .bi-circle {
   padding-right: 20px;
   font-size: 1rem;
@@ -100,7 +104,7 @@ header {
 pre {
   font-family: "JetBrains Mono", monospace;
   font-size: 16px;
-  background-color: #393e46;
+  background-color: #222831;
   text-align: left;
   line-height: 1.5;
   tab-size: 4;
@@ -110,16 +114,10 @@ pre {
   hyphens: none;
   padding: 0;
   border-radius: 6px;
-  box-shadow: 0 1px 2px #091d33;
-  transition: 0.5s ease;
   max-width: 500px;
   padding: 16px;
   margin: 0 auto;
-}
-
-pre:hover {
-  box-shadow: 0 5px 10px 4px #091d33;
-  transition: 0.5s ease;
+  box-shadow: inset 0 0 6px #464a53;
 }
 
 .bp-punctuation {
@@ -213,7 +211,7 @@ figure.semantic-example {
   max-width: 50%;
   height: auto;
   border-radius: 6px;
-  filter: drop-shadow(2px 6px 2px #091d33);
+  filter: drop-shadow(2px 6px 2px #191d24);
 }
 
 .semantic-example figcaption a {
@@ -242,7 +240,7 @@ table {
   white-space: nowrap;
   border-collapse: separate;
   border-spacing: 0;
-  box-shadow: 0 10px 14px 1px #091d33;
+  box-shadow: 0 10px 14px 1px #191d24;
 }
 
 /* th and td border and padding */
