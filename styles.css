@@ -4,58 +4,95 @@ body {
   background-color: #222831;
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  /* border: 1px solid red; */
 }
 
 code {
   font-family: "JetBrains Mono", monospace;
 }
 
+/* ---------- CONTENT STYLING ---------- */
+
+.main-content-container {
+  display: flex;
+  margin-right: 50px;
+}
+
+.container-content {
+  /* border: 1px solid plum; */
+  flex: 0 0 75%;
+}
+
 /* ---------- NAV STYLING ---------- */
 
-.header {
+.container-nav {
+  /* border: 1px solid greenyellow; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
 }
 
 .navigation {
-  font-size: 18px;
+  font-size: 22px;
+  position: sticky;
+  top: 50px;
 }
 
-.header ul {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.logos {
-  font-size: 1.75rem;
-  margin-left: auto;
+.navigation li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
-.header a {
+.navigation a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.bi-list {
-  font-size: 1.75rem;
+.bi-circle {
+  padding-right: 20px;
+  font-size: 1rem;
 }
 
 /* ---------- HEADER STYLING ---------- */
 
 .intro {
-  display: flex;
-  justify-content: center;
   font-weight: 400;
-  font-size: 36px;
-  padding-top: 25px;
+  font-size: 30px;
+}
+
+header {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+  margin: 10px 50px 0 50px;
+}
+
+.logos {
+  font-size: 1.75rem;
+  color: #ffffff;
+}
+
+.logos a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bi-code-slash {
+  padding-right: 20px;
 }
 
 /* ---------- CODE SNIPPET STYLING ---------- */
@@ -100,7 +137,7 @@ code {
   align-items: center;
   font-weight: 300;
   font-size: 26px;
-  padding-bottom: 25px;
+  padding: 40px 0 40px 0;
 }
 
 .section-divider::before,
@@ -126,8 +163,7 @@ code {
   align-items: center;
   font-weight: 300;
   font-size: 16px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 40px 0 40px 0;
 }
 
 .small-divider::before,
@@ -198,7 +234,7 @@ table {
   white-space: nowrap;
   border-collapse: separate;
   border-spacing: 0;
-  box-shadow: 0 10px 30px 6px #091d33;
+  box-shadow: 0 10px 14px 1px #091d33;
 }
 
 /* th and td border and padding */
