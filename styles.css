@@ -28,10 +28,6 @@ code {
 
 /* ---------- NAV STYLING ---------- */
 
-.intro {
-  font-family: "Bebas Neue", "Quicksand", sans-serif;
-}
-
 .container-nav {
   /* border: 1px solid greenyellow; */
   display: flex;
@@ -77,8 +73,9 @@ code {
 /* ---------- HEADER STYLING ---------- */
 
 .intro {
+  font-family: "Bebas Neue", "Quicksand", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 header {
